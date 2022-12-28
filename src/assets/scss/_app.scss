@@ -1,0 +1,19 @@
+.section1{
+  color: $white;
+  background-image:url("../images/bgImage.png");
+  height:100%;
+  .cardWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+  }
+  .RegisterTab{
+    width: 400px !important;
+    height: 450px !important;
+  }
+  .LoginTab{
+    text-align: center;
+  }
+}
+
