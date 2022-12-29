@@ -1,17 +1,23 @@
 .section1{
-  color: $white;
-  background-image:url("../images/bgImage.png");
-  height:100%;
+
   .cardWrapper{
     position: relative;
     display: flex;
     justify-content: center;
-
   }
-  .RegisterTab{
-    width: 400px !important;
-    height: 450px !important;
-  }
+.p-tabview-title {
+    line-height: 1;
+    white-space: nowrap;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "AvenirLTStd-Medium",sans-serif !important;
+    padding: 19px 0px 18px 0px;
+}
+.p-tabview.active{
+  color: #172b4d
+}
   .LoginTab{
     text-align: center;
   }

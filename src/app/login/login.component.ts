@@ -18,7 +18,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onClick(){
+  onLogin(){
+    console.log(this.loginForm.getRawValue())
     alert("clicked");
   }
 }
+

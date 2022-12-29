@@ -1,17 +1,18 @@
 <div class="section1">
-    <div class="text-center pt-3">
-      <img src="assets/images/logo.png" class="img-fluid" alt="...">
+  <div class="text-center pt-3">
+    <img src="assets/images/logo.png" class="img-fluid" alt="...">
+  </div>
+  <div class="cardWrapper">
+  <div class="card mt-4">
+    <p-tabView>
+        <p-tabPanel header="Register" class="RegisterTab">
+          <app-register></app-register>
+        </p-tabPanel>
+        <p-tabPanel header="Login" class="LoginTab">
+          <app-login></app-login>
+        </p-tabPanel>
+    </p-tabView>
     </div>
-    <div class="cardWrapper">
-    <div class="card mt-4">
-      <p-tabView>
-          <p-tabPanel header="Register" class="RegisterTab">
-            <app-register></app-register>
-          </p-tabPanel>
-          <p-tabPanel header="Login" class="LoginTab">
-            <app-login></app-login>
-          </p-tabPanel>
-      </p-tabView>
-      </div>
-    </div>
+  </div>
 </div>
+
