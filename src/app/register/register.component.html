@@ -1,76 +1,72 @@
 <div class="RegisterTab">
-  <div class="d-flex">
+  <div class="d-flex checkBox mt-1">
     <div class="field-radiobutton pro">
-      <p-radioButton
-        name="city"
-        value="Chicago"
-        [(ngModel)]="selectedValue"
-        inputId="city1"
-        class="city"
-      ></p-radioButton>
-      <label for="city1">Individual</label>
+      <p-radioButton name="city" value="Chicago" [(ngModel)]="selectedValue" inputId="city1"></p-radioButton>
+      <label for="city1" class="text">Individual</label>
     </div>
-    <div class="field-radiobutton pro">
-      <p-radioButton
-        name="city"
-        value="Los Angeles"
-        [(ngModel)]="selectedValue"
-        inputId="city2"
-        class="city"
-      ></p-radioButton>
-      <label for="city2">Professional</label>
+    <div class="field-radiobutton pro mx-3">
+      <p-radioButton name="city" value="Los Angeles" [(ngModel)]="selectedValue" inputId="city2"></p-radioButton>
+      <label for="city2" class="text">Professional</label>
     </div>
   </div>
-  <div class="mt-4">
+  <div class="mt-3">
     <span class="p-float-label">
-      <p-dropdown
-        inputId="dropdown"  [autoDisplayFirst]="false"  [options]="cities"  optionLabel="name" class="dropdownStyle w-100"></p-dropdown>
+      <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" [options]="cities" optionLabel="name" class="w-100"
+        styleClass="dropdownStyle w-100"></p-dropdown>
       <label for="dropLabel">Real Estate Developer</label>
     </span>
   </div>
-  <div class="mt-4">
+  <div class="mt-3">
     <span class="p-float-label">
       <input type="text" id="inputtext" class="LoginInputs" pInputText />
       <label for="inputtext">Name</label>
     </span>
   </div>
-  <div class="mt-4">
-    <span class="p-float-label p-input-icon-right w-100">
-      <i class="pi pi-eye-slash"></i>
-      <input
-        type="text"
-        id="inputtext-right"
-        class="LoginInputs w-100"
-        pInputText
-      />
-      <label for="inputtext-right">Password</label>
+  <div class="mt-3">
+    <span class="p-float-label">
+      <p-inputMask mask="(999) 999-9999" class="w-100" styleClass="LoginInputs"></p-inputMask>
+      <label for="inputtext">TelePhone</label>
     </span>
   </div>
-  <div class="mt-4">
+  <div class="mt-3">
     <span class="p-float-label">
-      <input type="text" id="inputtext" class="LoginInputs" [formControlName]="'email'" pInputText>
+      <input type="text" id="inputtext" class="LoginInputs" pInputText>
       <label for="inputtext">Email</label>
     </span>
   </div>
-  <div class=" mt-4">
+  <div class="mt-3">
+    <span class="p-float-label">
+      <input type="text" id="inputtext" class="LoginInputs" pInputText />
+      <label for="inputtext">Agent code(Optional)</label>
+    </span>
+  </div>
+  <div class="mt-3">
     <span class="p-float-label p-input-icon-right  w-100">
       <i class="pi pi-eye-slash"></i>
-      <input type="text" id="inputtext-right" [formControlName]="'password'" class="LoginInputs w-100" pInputText>
+      <input type="text" id="inputtext-right" class="LoginInputs" pInputText>
       <label for="inputtext-right">Password</label>
     </span>
   </div>
-  <div class="forgotPassword mt-2">
-    <a class="text-end">Lost Your Password?</a>
+  <div class=" mt-3">
+    <span class="p-float-label p-input-icon-right  w-100">
+      <i class="pi pi-eye-slash"></i>
+      <input type="text" id="inputtext-right" class="LoginInputs" pInputText>
+      <label for="inputtext-right"> Confirm Password</label>
+    </span>
   </div>
-  <div class="mt-2">
-    <button type="button" class="w-100 rounded-pill" (click)="onRegister()" >Login</button>
+  <div class="field-checkbox mt-3">
+    <p-checkbox [binary]="true" inputId="binary"></p-checkbox>
+    <label for="binary" class="text2"> Agree to the <a>Terms & Conditions</a> </label>
   </div>
-    <div class=" mt-3">
+  <div class="mt-3">
+    <button type="button" class="w-100 LoginButton rounded-pill" (click)=" onRegister()" >Login</button>
+  </div>
+    <div class=" mt-3 pt-3">
       <p class="OtherLoginMethods">Login with Social Networks </p>
     </div>
-    <div class="mt-1">
-     <i class="pi pi-facebook Logo1"></i>
-     <i class="pi pi-google Logo2"></i>
-     <i class="pi pi-twitter Logo3"></i>
+    <div class="d-flex justify-content-center mt-2">
+     <i class="pi pi-facebook Logo2 facebook-color"></i>
+     <i class="pi pi-google Logo2 gogle-color mx-4"></i>
+     <i class="pi pi-twitter Logo2 twiter-color"></i>
     </div>
 </div>

@@ -11,9 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
+import {InputMaskModule} from 'primeng/inputmask';
+
+import {CheckboxModule} from 'primeng/checkbox';
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
   imports: [
+    CheckboxModule,
     DropdownModule,
     RadioButtonModule,
     BrowserModule,
@@ -24,6 +28,7 @@ import { DropdownModule } from 'primeng/dropdown';
     BrowserAnimationsModule,
     InputTextModule,
     ButtonModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent],

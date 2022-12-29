@@ -3,15 +3,17 @@
 }
 
 .LoginTab {
-  width: 400px !important;
-  margin-top:40px;
+  // width: 400px;
   .LoginInputs {
     width: 100%;
     font-size: 15px;
     border-radius: 23px;
-    margin: 10px 0px 10px 0px;
+    // margin: 10px 0px 10px 0px;
     border: solid 1px #e2e2e2;
     background-color: #fff;
+    &:focus{
+      border: solid 1px #31567f;
+ }
   }
 
   .forgotPassword {
@@ -22,19 +24,10 @@
       color: #172b4d;
       text-decoration: none;
     }
-    margin:12px 0px 22px 0px;
+    // margin:12px 0px 22px 0px;
     justify-content: end;
     text-align: right;
     font-family: "AvenirLTStd-Medium",sans-serif !important;
-  }
-
-  .LoginButton {
-    background-color: $blue;
-    text-align: center;
-    color: $white;
-    height: 50px;
-    font-family: "AvenirLTStd-Medium", sans-serif !important;
-    box-shadow: 0 2px 4px 0;
   }
  button,button:focus {
     background-color: #31567f;
@@ -50,41 +43,27 @@
     font-family: "AvenirLTStd-Medium", sans-serif !important;
     height: 19px;
     font-size: 15px;
-    margin: 40px 0px 20px 0px;
+    // margin: 40px 0px 20px 0px;
     line-height: 1.27;
     text-align: center;
     color: #172b4d;
   }
 }
-  .Logo1{
-    width: 15px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 1.29;
-    text-align: center;
-    margin-right: 20px;
-    color: #3b5998;
-    margin: 5px 25px 30px 0px;
-    font-size: 24px;
-    text-align: center;
-  }
+
   .Logo2{
-    margin: 0px 25px 0px 20px;
-    width: 15px;
-    height: 24px;
+    // margin: 0px 25px 0px 20px;
+
     font-size: 24px;
     line-height: 1.29;
     text-align: center;
-    color: #db4a39;
-  }
-  .Logo3{
-    margin: 0px 20px 0px 10px;
-    width: 15px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 1.29;
-    text-align: center;
-    color:#00acee;
   }
 
 
+
+  .p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label, .p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label, .p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label {
+    top: 2px;
+    left: 22px;
+    padding: 0 5px 0px 5px;
+    background: white;
+    font-size: 12px;
+}

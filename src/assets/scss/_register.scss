@@ -3,31 +3,46 @@
 }
 
 .RegisterTab {
-  width: 400px !important;
-  .indi{
-      margin:10px 9px 10px 0px;
+  // width: 400px ;
+  .p-radiobutton-box{
+    &.p-highlight {
+    border-color:#172b4d;
+    background: #31567f;
+
+}
+&.p-radiobutton-icon{
+  color: #172b4d;
+}
+}
+  .text{
+    padding-left:  8px;
   }
-  .pro{
-      margin:10px 9px 10px 0px;
-  }
-  .city{
-      margin-top: 10px;
+  .text2{
+    padding-left:  15px;
   }
   .LoginInputs {
     width: 100%;
     font-size: 15px;
     border-radius: 23px;
-    margin: 10px 0px 10px 0px;
     border: solid 1px #e2e2e2;
     background-color: #fff;
+    padding: 8px 14px;
+    &:focus{
+      border: solid 1px #31567f;
+ }
   }
   .dropdownStyle{
     width: 100%;
     font-size: 15px;
     border-radius: 23px;
-    margin: 10px 0px 10px 0px;
-    border: solid 1px #31567f;
+
     background-color: #fff;
+    &:focus{
+         border: solid 1px #31567f;
+    }
+    span{
+    padding: 8px 14px;
+    }
   }
 
   .forgotPassword {
@@ -59,17 +74,26 @@
     height: 50px;
     font-family: "AvenirLTStd-Medium", sans-serif !important;
 }
-
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  color: #ffffff;
+  font-size: 14px;
+  border-color: #ffffff;
+  background-color: #172b4d;
+}
 
   .OtherLoginMethods {
     text-align: center;
     font-family: "AvenirLTStd-Medium", sans-serif !important;
-    height: 19px;
     font-size: 15px;
-    margin: 40px 0px 20px 0px;
     line-height: 1.27;
     text-align: center;
     color: #172b4d;
   }
-}
 
+  }
+
+
+.card{
+  width: 400px;
+  margin :0 auto;
+}
